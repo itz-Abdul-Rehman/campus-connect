@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CampusConnect</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">CampusConnect</a>
+            <ul class="navbar-menu">
+                <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+                <li class="navbar-item"><a href="textbooks.html" class="navbar-link">Textbooks</a></li>
+                <li class="navbar-item"><a href="groups.html" class="navbar-link">Study Groups</a></li>
+                <li class="navbar-item"><a href="events.html" class="navbar-link">Events</a></li>
+            </ul>
+            <ul>
+                <a href="register.html"><button class="reg-btn"><span id="reg">Register</span></button></a>
+                <li class="navbar-item"><a href="login.html" class="navbar-link">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <main>
+        <div class="registration-container">
+        <div class="registration-box">
+            <h1 class="registration-title">Login here</h1>
+           
+
+            <form class="registration-form" action="images/login.png">
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Campus Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="form-input" 
+                        placeholder="student@university.edu"
+                        required
+                    >
+                </div>  
+                <div class="form-group">
+                    <label for="password" class="form-label">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        class="form-input" 
+                        placeholder="Enter Password"
+                        required
+                        minlength="8"
+                    >   
+                </div>
+                 
+                
+                <button type="submit" class="submit-btn">Login</button>
+                <p class="login-link">
+                    Don't have an account? <a href="register.html" class="link">Register here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
